@@ -44,24 +44,24 @@ This software should be so small that every user can review and verify the code 
 mode: client
 
 # API to host or connect to
-api: snake-oil-mill.example.com
+api: http://127.0.0.1:5000/submit #snake-oil-mill.example.com
 
 # Username and password to authenticate
-user: myuser
-pw: 59bcc3ad6775562f845953cf01624225
+username: myuser
+password: 59bcc3ad6775562f845953cf01624225
 
 commands:
- # Hostname to report
- - hostname: "hostname"
+  # Hostname to report
+  - hostname: "hostname"
 
- # AV status to report
- - av: "clamscan --version"
+  # AV status to report
+  - av: "clamscan --version"
 
- # Command to check the firewall configuration
- - firewall: "sudo iptables --table filter --list INPUT | grep 'Chain INPUT (policy DROP)'"
+  # Command to check the firewall configuration
+  - firewall: "sudo iptables --table filter --list INPUT | grep 'Chain INPUT (policy '"
 
 # Main sleep loop time (seconds)
-loop_time_s: 60*60*8
+loop_time_s: 3600
 
 # Time to wait for retry (seconds)
 retry_time_s: 60
