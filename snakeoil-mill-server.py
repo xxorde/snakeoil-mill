@@ -1,5 +1,10 @@
 #!python
-# Alexander Sosna <alexander@sosna.de>
+# Copyright 2021 Alexander Sosna <alexander@sosna.de>
+#
+# Use of this source code is governed by an MIT-style
+# license that can be found in the LICENSE file or at
+# https://opensource.org/licenses/MIT.
+
 import requests
 import yaml
 import os
