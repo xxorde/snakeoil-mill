@@ -49,11 +49,7 @@ def main():
 			print(exc)
 
 	if config['mode'] == 'client':
-		while (1):
-			client(config)
-			print("sleep now")
-			time.sleep(int(config['loop_time_s']))
-			print("sleep done")
+		client(config)
 	else:
 		print("error: config not for client")
 		exit(1)

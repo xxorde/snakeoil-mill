@@ -1,4 +1,4 @@
-# Snake oil mill
+# Snakeoil Mill
 
 This software is meant to help with fulfilling the requirements of various IT Security certifications without introducing new attack vectors by introducing unsafe code or relying on third party software and services.
 One example would be the Payment Card Industry Data Security Standard.
@@ -59,10 +59,3 @@ commands:
 
   # Command to check the firewall configuration
   - firewall: "sudo iptables --table filter --list INPUT | grep 'Chain INPUT (policy '"
-
-# Main sleep loop time (seconds)
-loop_time_s: 3600
-
-# Time to wait for retry (seconds)
-retry_time_s: 60
-```
