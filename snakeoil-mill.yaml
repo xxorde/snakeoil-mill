@@ -18,6 +18,3 @@ commands:
 
   # Command to check the firewall configuration
   - firewall: "sudo iptables --table filter --list INPUT | grep 'Chain INPUT (policy '"
-
-# Time to wait for retry (seconds)
-retry_time_s: 60
